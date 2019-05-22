@@ -357,7 +357,7 @@
         
           
             <p>[TOC]</p>
-<h2 id="一-安装Git-Bash"><a href="#一-安装Git-Bash" class="headerlink" title="一. 安装Git Bash"></a>一. 安装Git Bash</h2><p>windows环境：</p>
+<h2><span id="一-安装git-bash">一. 安装Git Bash</span></h2><p>windows环境：</p>
 <ul>
 <li><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">下载地址</a></li>
 <li>选择windows平台,按照默认设置安装。</li>
@@ -366,7 +366,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="二-安装NodeJS"><a href="#二-安装NodeJS" class="headerlink" title="二.安装NodeJS"></a>二.安装NodeJS</h2><ul>
+<h2><span id="二安装nodejs">二.安装NodeJS</span></h2><ul>
 <li><a href="https://nodejs.org/en/" target="_blank" rel="noopener">下载地址</a>(LTS为长期支持版，Current为当前最新版)</li>
 <li>安装过程中一路next，在Custom Setup这一步记得选<code>ADD to PATH</code>不用自己去配置环境变量。安装完成后使用<code>win+r</code>快捷键调出运行，输入cmd，在cmd中输入path查看node是否配置在里面。</li>
 <li>查看版本<ul>
@@ -374,7 +374,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="三-安装hexo"><a href="#三-安装hexo" class="headerlink" title="三. 安装hexo"></a>三. 安装hexo</h2><ul>
+<h2><span id="三-安装hexo">三. 安装hexo</span></h2><ul>
 <li><p>首先创建一个文件夹（用来存放Blog的相关文件），然后cd到该文件夹下。</p>
 </li>
 <li><p>安装hexo命令：<code>npm i -g hexo</code></p>
@@ -389,7 +389,7 @@
 <li><p>浏览器访问网址： <code>http://localhost:4000/</code></p>
 </li>
 </ul>
-<h2 id="四-github-pages"><a href="#四-github-pages" class="headerlink" title="四. github pages"></a>四. github pages</h2><ol>
+<h2><span id="四-github-pages">四. github pages</span></h2><ol>
 <li><p>创建一个Github账户。</p>
 </li>
 <li><p>创建一个repo名称为<code>yourname.github.io</code>，其中yourname是你的GitHub名称。</p>
@@ -414,15 +414,15 @@
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="string">git@github.com:&lt;Github账号名称&gt;/&lt;Github账号名称&gt;.github.io.git</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<h2 id="五-在谷歌上搜索到自己的博客"><a href="#五-在谷歌上搜索到自己的博客" class="headerlink" title="五. 在谷歌上搜索到自己的博客"></a>五. 在谷歌上搜索到自己的博客</h2><h2 id="1-查看博客是否被收录："><a href="#1-查看博客是否被收录：" class="headerlink" title="1.查看博客是否被收录："></a>1.查看博客是否被收录：</h2><p>打开谷歌搜索，在搜索框里输入：</p>
+<h2><span id="五-在谷歌上搜索到自己的博客">五. 在谷歌上搜索到自己的博客</span></h2><h2><span id="1查看博客是否被收录">1.查看博客是否被收录：</span></h2><p>打开谷歌搜索，在搜索框里输入：</p>
 <p><code>site:yourname.github.io</code></p>
 <p>如果页面有返回相关内容，则你的博客已经被收录。如果找不到相关内容，则表明未被收录。</p>
-<h2 id="2-提交你的博客到谷歌"><a href="#2-提交你的博客到谷歌" class="headerlink" title="2. 提交你的博客到谷歌"></a>2. 提交你的博客到谷歌</h2><p>打开<a href="https://search.google.com/search-console?resource_id=https%3A%2F%2Ferrorlike.github.io%2F&amp;hl=zh-CN" target="_blank" rel="noopener">Google Search Console</a>点击左上角的按钮，打开主菜单。点击＋添加资源。在网页前缀中输入自己的博客地址。</p>
+<h2><span id="2-提交你的博客到谷歌">2. 提交你的博客到谷歌</span></h2><p>打开<a href="https://search.google.com/search-console?resource_id=https%3A%2F%2Ferrorlike.github.io%2F&amp;hl=zh-CN" target="_blank" rel="noopener">Google Search Console</a>点击左上角的按钮，打开主菜单。点击＋添加资源。在网页前缀中输入自己的博客地址。</p>
 <p>点击继续，在验证方式中选择「HTML标签验证」。</p>
 <p>然后将出现的meta标签内容添加到<code>Hexo/themes/next/layout/_partials</code>（next是主题名称）目录下的head.swig(最上方原来meta标签的下面)。保存文件。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 <p>然后点击完成验证，会出现验证成功提示。</p>
-<h1 id="3-添加站点地图"><a href="#3-添加站点地图" class="headerlink" title="3.添加站点地图"></a>3.添加站点地图</h1><ul>
+<h1><span id="3添加站点地图">3.添加站点地图</span></h1><ul>
 <li>添加站点地图可以让搜索引擎索引你的网站结构等信息。让其更智能的抓取内容。在hexo目录下输入：</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap  --save</span><br></pre></td></tr></table></figure>
@@ -579,13 +579,13 @@
         
           
             <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<h2><span id="quick-start">Quick Start</span></h2><h3><span id="create-a-new-post">Create a new post</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3><span id="run-server">Run server</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h3><span id="generate-static-files">Generate static files</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h3><span id="deploy-to-remote-sites">Deploy to remote sites</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
           
