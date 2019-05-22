@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -74,8 +74,6 @@
 
 
 
-  
-
 
   <link rel="alternate" href="/atom.xml" title="Micromind" type="application/atom+xml">
 
@@ -91,7 +89,7 @@
 <meta property="og:site_name" content="Micromind">
 <meta property="og:description" content="一. 安装Git Bashwindows环境：  下载地址  选择windows平台,按照默认设置安装。  打开git bash 查看版本： 命令：git version   二.安装NodeJS 下载地址(LTS为长期支持版，Current为当前最新版) 安装过程中一路next，在Custom Setup这一步记得选ADD to PATH不用自己去配置环境变量。安装完成后使用win+r快捷键调出">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-22T07:24:46.533Z">
+<meta property="og:updated_time" content="2019-05-22T08:14:36.502Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="利用Hexo从零开始搭建一个博客">
 <meta name="twitter:description" content="一. 安装Git Bashwindows环境：  下载地址  选择windows平台,按照默认设置安装。  打开git bash 查看版本： 命令：git version   二.安装NodeJS 下载地址(LTS为长期支持版，Current为当前最新版) 安装过程中一路next，在Custom Setup这一步记得选ADD to PATH不用自己去配置环境变量。安装完成后使用win+r快捷键调出">
@@ -102,9 +100,9 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Pisces',
     version: '5.1.4',
-    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -149,7 +147,7 @@
     
   
 
-  <div class="container sidebar-position-right page-post-detail">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -191,6 +189,16 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
             首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
           </a>
         </li>
       
@@ -274,7 +282,7 @@
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="error">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/cat.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
@@ -395,7 +403,7 @@
 </li>
 <li><p>添加SSH key:</p>
 <p>在bash中输入：<code>ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</code>，生成ssh。</p>
-<p>复制id_rsa.pub的内容(在路径C:\Users)到Personal Settings-SSH and GPG keys-New ssh key</p>
+<p>复制路径C:\Users\id_rsa.pub的内容到Giithub网站的Personal Settings\SSH and GPG keys\New ssh key中。</p>
 <p>测试是否添加成功。在命令行（即Git Bash）依次输入以下命令，返回“You’ve successfully authenticated”即成功：</p>
 </li>
 </ul>
@@ -530,6 +538,8 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image" src="/images/cat.jpg" alt="error">
+            
               <p class="site-author-name" itemprop="name">error</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
@@ -594,6 +604,13 @@
       
 
       
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
 
     </div>
   </aside>
@@ -623,7 +640,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
 
 
 
@@ -640,11 +657,6 @@
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
     
@@ -723,6 +735,13 @@
   
   
 
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
@@ -782,7 +801,7 @@
         notify: false,
         appId: '2VYlU0BGHRi02fBefcQ527eV-gzGzoHsz',
         appKey: 'omaQ9nG9rFKPYzcwgdA40rXs',
-        placeholder: 'Just go go',
+        placeholder: 'say anyting',
         avatar:'mm',
         guest_info:guest,
         pageSize:'10' || 10,
