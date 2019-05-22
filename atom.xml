@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-05-22T07:15:11.467Z</updated>
+  <updated>2019-05-22T07:24:46.533Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2019/04/11/%E5%88%A9%E7%94%A8Hexo%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/2019/04/11/利用Hexo从零开始搭建一个博客/</id>
     <published>2019-04-11T07:21:58.000Z</published>
-    <updated>2019-05-22T07:15:11.467Z</updated>
+    <updated>2019-05-22T07:24:46.533Z</updated>
     
     <summary type="html">
     
@@ -29,9 +29,7 @@
       
         
         
-          &lt;h2 id=&quot;一-安装Git-Bash&quot;&gt;&lt;a href=&quot;#一-安装Git-Bash&quot; class=&quot;headerlink&quot; title=&quot;一. 安装Git Bash&quot;&gt;&lt;/a&gt;一. 安装Git Bash&lt;/h2&gt;&lt;p&gt;windows环境：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a
+          &lt;h2 id=&quot;一-安装Git-Bash&quot;&gt;&lt;a href=&quot;#一-安装Git-Bash&quot; class=&quot;headerlink&quot; title=&quot;一. 安装Git Bash&quot;&gt;&lt;/a&gt;一. 安装Git
         
       
     

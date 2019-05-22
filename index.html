@@ -358,20 +358,18 @@
           
             <h2 id="一-安装Git-Bash"><a href="#一-安装Git-Bash" class="headerlink" title="一. 安装Git Bash"></a>一. 安装Git Bash</h2><p>windows环境：</p>
 <ul>
-<li><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">下载地址</a></li>
-<li>选择windows平台,按照默认设置安装。</li>
-<li>打开git bash 查看版本<ul>
-<li>命令：<code>git version</code></li>
-</ul>
+<li><p><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">下载地址</a></p>
+</li>
+<li><p>选择windows平台,按照默认设置安装。</p>
+</li>
+<li><p>打开git bash 查看版本：</p>
+<p>命令：<code>git version</code></p>
 </li>
 </ul>
 <h2 id="二-安装NodeJS"><a href="#二-安装NodeJS" class="headerlink" title="二.安装NodeJS"></a>二.安装NodeJS</h2><ul>
 <li><a href="https://nodejs.org/en/" target="_blank" rel="noopener">下载地址</a>(LTS为长期支持版，Current为当前最新版)</li>
 <li>安装过程中一路next，在Custom Setup这一步记得选<code>ADD to PATH</code>不用自己去配置环境变量。安装完成后使用<code>win+r</code>快捷键调出运行，输入cmd，在cmd中输入path查看node是否配置在里面。</li>
-<li>查看版本<ul>
-<li>命令 <code>node -v</code></li>
-</ul>
-</li>
+<li>查看版本命令： <code>node -v</code></li>
 </ul>
 <h2 id="三-安装hexo"><a href="#三-安装hexo" class="headerlink" title="三. 安装hexo"></a>三. 安装hexo</h2><ul>
 <li><p>首先创建一个文件夹（用来存放Blog的相关文件），然后cd到该文件夹下。</p>
@@ -388,29 +386,23 @@
 <li><p>浏览器访问网址： <code>http://localhost:4000/</code></p>
 </li>
 </ul>
-<h2 id="四-github-pages"><a href="#四-github-pages" class="headerlink" title="四. github pages"></a>四. github pages</h2><ol>
-<li><p>创建一个Github账户。</p>
-</li>
-<li><p>创建一个repo名称为<code>yourname.github.io</code>，其中yourname是你的GitHub名称。</p>
-</li>
-<li><p>将本地Hexo博客推送到GithubPages</p>
-<ol>
+<h2 id="四-github-pages"><a href="#四-github-pages" class="headerlink" title="四. github pages"></a>四. github pages</h2><p>创建一个Github账户。</p>
+<p>创建一个repo名称为<code>yourname.github.io</code>，其中yourname是你的GitHub名称。</p>
+<p>将本地Hexo博客推送到GithubPages</p>
+<ul>
 <li><p>安装<code>hexo-deployer-git</code>插件。在命令行（即Git Bash）运行以下命令即可：   </p>
 </li>
-<li><p>添加SSH key</p>
-<ul>
-<li>在bash中输入：<code>ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</code>，生成ssh。</li>
-<li>复制id_rsa.pub的内容(在路径C:\Users)到Personal Settings-SSH and GPG keys-New ssh key</li>
-<li>测试是否添加成功。在命令行（即Git Bash）依次输入以下命令，返回“You’ve successfully authenticated”即成功：</li>
+<li><p>添加SSH key:</p>
+<p>在bash中输入：<code>ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</code>，生成ssh。</p>
+<p>复制id_rsa.pub的内容(在路径C:\Users)到Personal Settings-SSH and GPG keys-New ssh key</p>
+<p>测试是否添加成功。在命令行（即Git Bash）依次输入以下命令，返回“You’ve successfully authenticated”即成功：</p>
+</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>修改<code>_config.yml</code>（在站点目录下）。文件末尾修改为：</p>
-</li>
-</ol>
+<ul>
+<li>修改<code>_config.yml</code>（在站点目录下）。文件末尾修改为：</li>
+</ul>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="string">git@github.com:&lt;Github账号名称&gt;/&lt;Github账号名称&gt;.github.io.git</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
-</li>
-</ol>
 <h2 id="五-在谷歌上搜索到自己的博客"><a href="#五-在谷歌上搜索到自己的博客" class="headerlink" title="五. 在谷歌上搜索到自己的博客"></a>五. 在谷歌上搜索到自己的博客</h2><h3 id="1-查看博客是否被收录："><a href="#1-查看博客是否被收录：" class="headerlink" title="1.查看博客是否被收录："></a>1.查看博客是否被收录：</h3><p>打开谷歌搜索，在搜索框里输入：</p>
 <p><code>site:yourname.github.io</code></p>
 <p>如果页面有返回相关内容，则你的博客已经被收录。如果找不到相关内容，则表明未被收录。</p>
@@ -418,7 +410,8 @@
 <p>点击继续，在验证方式中选择「HTML标签验证」。</p>
 <p>然后将出现的meta标签内容添加到<code>Hexo/themes/next/layout/_partials</code>（next是主题名称）目录下的head.swig(最上方原来meta标签的下面)。保存文件。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>然后点击完成验证，会出现验证成功提示。</p>
+<p>部署完成后点击完成验证。</p>
+<p>会出现验证成功提示。</p>
 <h3 id="3-添加站点地图"><a href="#3-添加站点地图" class="headerlink" title="3.添加站点地图"></a>3.添加站点地图</h3><ul>
 <li>添加站点地图可以让搜索引擎索引你的网站结构等信息。让其更智能的抓取内容。在hexo目录下输入：</li>
 </ul>
