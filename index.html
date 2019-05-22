@@ -413,15 +413,20 @@
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="string">git@github.com:&lt;Github账号名称&gt;/&lt;Github账号名称&gt;.github.io.git</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<h2 id="五-在谷歌上搜索到自己的博客"><a href="#五-在谷歌上搜索到自己的博客" class="headerlink" title="五. 在谷歌上搜索到自己的博客"></a>五. 在谷歌上搜索到自己的博客</h2><h2 id="1-查看博客是否被收录："><a href="#1-查看博客是否被收录：" class="headerlink" title="1.查看博客是否被收录："></a>1.查看博客是否被收录：</h2><p>打开谷歌搜索，在搜索框里输入：</p>
+<h2 id="五-在谷歌上搜索到自己的博客"><a href="#五-在谷歌上搜索到自己的博客" class="headerlink" title="五. 在谷歌上搜索到自己的博客"></a>五. 在谷歌上搜索到自己的博客</h2><p>1.查看博客是否被收录：</p>
+<p>打开谷歌搜索，在搜索框里输入：</p>
 <p><code>site:yourname.github.io</code></p>
 <p>如果页面有返回相关内容，则你的博客已经被收录。如果找不到相关内容，则表明未被收录。</p>
-<h2 id="2-提交你的博客到谷歌"><a href="#2-提交你的博客到谷歌" class="headerlink" title="2. 提交你的博客到谷歌"></a>2. 提交你的博客到谷歌</h2><p>打开<a href="https://search.google.com/search-console?resource_id=https%3A%2F%2Ferrorlike.github.io%2F&amp;hl=zh-CN" target="_blank" rel="noopener">Google Search Console</a>点击左上角的按钮，打开主菜单。点击＋添加资源。在网页前缀中输入自己的博客地址。</p>
+<ol start="2">
+<li>提交你的博客到谷歌</li>
+</ol>
+<p>打开<a href="https://search.google.com/search-console?resource_id=https%3A%2F%2Ferrorlike.github.io%2F&amp;hl=zh-CN" target="_blank" rel="noopener">Google Search Console</a>点击左上角的按钮，打开主菜单。点击＋添加资源。在网页前缀中输入自己的博客地址。</p>
 <p>点击继续，在验证方式中选择「HTML标签验证」。</p>
 <p>然后将出现的meta标签内容添加到<code>Hexo/themes/next/layout/_partials</code>（next是主题名称）目录下的head.swig(最上方原来meta标签的下面)。保存文件。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 <p>然后点击完成验证，会出现验证成功提示。</p>
-<h2 id="3-添加站点地图"><a href="#3-添加站点地图" class="headerlink" title="3.添加站点地图"></a>3.添加站点地图</h2><ul>
+<p>3.添加站点地图</p>
+<ul>
 <li>添加站点地图可以让搜索引擎索引你的网站结构等信息。让其更智能的抓取内容。在hexo目录下输入：</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap  --save</span><br></pre></td></tr></table></figure>
