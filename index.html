@@ -356,15 +356,8 @@
       
         
           
-            <h2 id="主要步骤："><a href="#主要步骤：" class="headerlink" title="主要步骤："></a>主要步骤：</h2><ol>
-<li>安装Git Bash</li>
-<li>安装NodeJS</li>
-<li>安装hexo</li>
-<li>github pages</li>
-<li>修改及配置主题</li>
-<li>添加RSS</li>
-</ol>
-<h2 id="1-安装Git-Bash"><a href="#1-安装Git-Bash" class="headerlink" title="1. 安装Git Bash"></a>1. 安装Git Bash</h2><p>windows环境：</p>
+            <p>[TOC]</p>
+<h2 id="一-安装Git-Bash"><a href="#一-安装Git-Bash" class="headerlink" title="一. 安装Git Bash"></a>一. 安装Git Bash</h2><p>windows环境：</p>
 <ul>
 <li><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">下载地址</a></li>
 <li>选择windows平台,按照默认设置安装。</li>
@@ -373,7 +366,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="2-安装NodeJS"><a href="#2-安装NodeJS" class="headerlink" title="2.安装NodeJS"></a>2.安装NodeJS</h2><ul>
+<h2 id="二-安装NodeJS"><a href="#二-安装NodeJS" class="headerlink" title="二.安装NodeJS"></a>二.安装NodeJS</h2><ul>
 <li><a href="https://nodejs.org/en/" target="_blank" rel="noopener">下载地址</a>(LTS为长期支持版，Current为当前最新版)</li>
 <li>安装过程中一路next，在Custom Setup这一步记得选<code>ADD to PATH</code>不用自己去配置环境变量。安装完成后使用<code>win+r</code>快捷键调出运行，输入cmd，在cmd中输入path查看node是否配置在里面。</li>
 <li>查看版本<ul>
@@ -381,7 +374,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="3-安装hexo"><a href="#3-安装hexo" class="headerlink" title="3. 安装hexo"></a>3. 安装hexo</h2><ul>
+<h2 id="三-安装hexo"><a href="#三-安装hexo" class="headerlink" title="三. 安装hexo"></a>三. 安装hexo</h2><ul>
 <li><p>首先创建一个文件夹（用来存放Blog的相关文件），然后cd到该文件夹下。</p>
 </li>
 <li><p>安装hexo命令：<code>npm i -g hexo</code></p>
@@ -396,7 +389,7 @@
 <li><p>浏览器访问网址： <code>http://localhost:4000/</code></p>
 </li>
 </ul>
-<h2 id="4-github-pages"><a href="#4-github-pages" class="headerlink" title="4. github pages"></a>4. github pages</h2><ol>
+<h2 id="四-github-pages"><a href="#四-github-pages" class="headerlink" title="四. github pages"></a>四. github pages</h2><ol>
 <li><p>创建一个Github账户。</p>
 </li>
 <li><p>创建一个repo名称为<code>yourname.github.io</code>，其中yourname是你的GitHub名称。</p>
@@ -421,7 +414,30 @@
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="string">git@github.com:&lt;Github账号名称&gt;/&lt;Github账号名称&gt;.github.io.git</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<h2 id="5-修改及配置主题"><a href="#5-修改及配置主题" class="headerlink" title="5. 修改及配置主题"></a>5. 修改及配置主题</h2>
+<h2 id="五-在谷歌上搜索到自己的博客"><a href="#五-在谷歌上搜索到自己的博客" class="headerlink" title="五. 在谷歌上搜索到自己的博客"></a>五. 在谷歌上搜索到自己的博客</h2><h2 id="1-查看博客是否被收录："><a href="#1-查看博客是否被收录：" class="headerlink" title="1.查看博客是否被收录："></a>1.查看博客是否被收录：</h2><p>打开谷歌搜索，在搜索框里输入：</p>
+<p><code>site:yourname.github.io</code></p>
+<p>如果页面有返回相关内容，则你的博客已经被收录。如果找不到相关内容，则表明未被收录。</p>
+<h2 id="2-提交你的博客到谷歌"><a href="#2-提交你的博客到谷歌" class="headerlink" title="2. 提交你的博客到谷歌"></a>2. 提交你的博客到谷歌</h2><p>打开<a href="https://search.google.com/search-console?resource_id=https%3A%2F%2Ferrorlike.github.io%2F&amp;hl=zh-CN" target="_blank" rel="noopener">Google Search Console</a>点击左上角的按钮，打开主菜单。点击＋添加资源。在网页前缀中输入自己的博客地址。</p>
+<p>点击继续，在验证方式中选择「HTML标签验证」。</p>
+<p>然后将出现的meta标签内容添加到<code>Hexo/themes/next/layout/_partials</code>（next是主题名称）目录下的head.swig(最上方原来meta标签的下面)。保存文件。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>然后点击完成验证，会出现验证成功提示。</p>
+<h1 id="3-添加站点地图"><a href="#3-添加站点地图" class="headerlink" title="3.添加站点地图"></a>3.添加站点地图</h1><ul>
+<li>添加站点地图可以让搜索引擎索引你的网站结构等信息。让其更智能的抓取内容。在hexo目录下输入：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap  --save</span><br></pre></td></tr></table></figure>
+<ul>
+<li>修改<code>node_modules/hexo-generator-sitemap/sitemap.xml</code>用下面的内容进行覆盖。</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">urlset</span> <span class="attr">xmlns</span>=<span class="string">"http://www.sitemaps.org/schemas/sitemap/0.9"</span>&gt;</span></span><br><span class="line">  &#123;% for post in posts %&#125;</span><br><span class="line">  <span class="tag">&lt;<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">loc</span>&gt;</span>&#123;&#123; (config.urlforgoogle+post.path) | uriencode &#125;&#125;<span class="tag">&lt;/<span class="name">loc</span>&gt;</span></span><br><span class="line">    &#123;% if post.updated %&#125;</span><br><span class="line">    <span class="tag">&lt;<span class="name">lastmod</span>&gt;</span>&#123;&#123; post.updated.toISOString() &#125;&#125;<span class="tag">&lt;/<span class="name">lastmod</span>&gt;</span></span><br><span class="line">    &#123;% elif post.date %&#125;</span><br><span class="line">    <span class="tag">&lt;<span class="name">lastmod</span>&gt;</span>&#123;&#123; post.date.toISOString() &#125;&#125;<span class="tag">&lt;/<span class="name">lastmod</span>&gt;</span></span><br><span class="line">    &#123;% endif %&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">  &#123;% endfor %&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">urlset</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>打开.config.yml文件，在最下方添加如下字段</li>
+</ul>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">urlforgoogle:</span> <span class="attr">http://yourname.github.io/</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 自动生成sitemap</span></span><br><span class="line"><span class="attr">sitemap:</span></span><br><span class="line"><span class="attr">  path:</span> <span class="string">sitemap.xml</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>点击主菜单中的站点地图，添加新的站点地图，在你的博客地址后面加一级sitmap.xml，点击提交。</li>
+</ul>
+
           
         
       
